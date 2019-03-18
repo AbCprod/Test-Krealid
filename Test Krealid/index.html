@@ -1,0 +1,94 @@
+<!doctype html>
+<div class="no-js" lang="fr" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kréalid / Test Intégrateur</title>
+        <link rel="stylesheet" href="css/foundation.css">
+        <link rel="stylesheet" href="css/app.css">
+    </head>
+    <div class="full-width">
+        <div class="content">
+            <div class="grid-x grid-margin-x">
+                <div class="cell large-6">
+                    <div class="board-image">
+                        <img class="image" src="img/rectangle.png"/>
+                    </div>
+                </div>
+                <div class="cell small-12 large-6">
+                    <div class="login-box">
+                        <form class="login-box-content" data-abide novalidate>
+                            <div class="grid-x grid-margin-x">
+                                <div class="login-box-title">
+                                    <h1>Bienvenue sur Kréacloud</h1>
+                                    <p1>Inscrivez-vous et commencez à stocker vos fichiers en ligne dans un espace personnel et sécurisé.</p1> <br><br>
+                                    <p2>Vous possédez déjà un compte client ? <a href="https://www.developpez.com/" target="_blank">Connectez-vous</a></p2>
+                                </div>
+                                <div class="cell small-6">
+                                    <label>NOM*</label>
+                                    <input type="text" id="firstname" maxlength="35" required/>
+                                </div>
+                                <div class="cell small-6">
+                                    <label>PRENOM*</label>
+                                    <input type="text" maxlength="35" required/>
+                                    <span id='missfirstname'></span>
+                                </div>
+                            </div>
+                            <div class="grid-x grid-margin-x">
+                                <div class="cell small-6">
+                                    <label>EMAIL*</label>
+                                    <input type="email" maxlength="35" required/>
+                                </div>
+                                <div class="cell small-6">
+                                    <label>TELEPHONE*</label>
+                                    <input type="text" maxlength="10" pattern="[0-9]{10}" required/>
+                                </div>
+                            </div>
+                            <div class="grid-x grid-margin-x">
+                                <div class="cell medium-12">
+                                    <label>ADRESSE*</label>
+                                    <input type="text" maxlength="80" required/>
+                                </div>
+                            </div>
+                            <div class="grid-x grid-margin-x">
+                                <div class="cell large-6">
+                                    <label>CODE POSTAL*</label>
+                                    <input type="text" maxlength="5" pattern="[0-9]{5}" required/>
+                                </div>
+                                <div class="cell large-6">
+                                    <label>VILLE*</label>
+                                    <input type="text" required/>
+                                </div>
+                            </div>
+                            <div class="grid-x check">
+                                <div class="cell large-12">
+                                    <input id="email-noti" type="checkbox" required />
+                                    <p3>Je souhaite recevoir les emails commerciaux</p3>
+                                    <label class="noti-email"></label>
+                                </div>
+                                <div class="cell large-12">
+                                    <input id="cgu" type="checkbox" required>
+                                    <p3>J’accepte les <a href="https://www.developpez.com/" target="_blank">conditions générales d’utilisation du service</a></p3>
+                                    <label class="conditions"></label>
+                                </div>
+                            </div>
+                            <div class="grid-x grid-margin-x">
+                                <div class="cell large-6">
+                                    <input class="button" id="submit" type="submit" name="signup_submit" value="S’inscrire" required>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<script src="js/vendor/jquery.js"></script>
+<script src="js/vendor/what-input.js"></script>
+<script src="js/vendor/foundation.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
